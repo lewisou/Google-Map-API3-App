@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="jquery-1.8.2.min.js"></script>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?v=3.8&key=AIzaSyA5yljfYdjEI8gAWJE3iKWeP8H_3RmicsY&sensor=true"></script>
+    <script type="text/javascript" src="control.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var mc = new MapControl();
+        mc.initMap('map_canvas');      
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="map_canvas"></div>
+  </body>
+</html>
